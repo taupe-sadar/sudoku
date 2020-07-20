@@ -71,7 +71,7 @@ void lire_grille(){
     while((caractere != EOF)&&(indice!=81)){
       
       caractere = fgetc(input);
-      if(caractere!='\n'){
+      if(caractere >= '0' && caractere <= '9'){
 	Grille[indice]=(int)(caractere - '0');
 	indice++;
       }
